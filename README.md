@@ -42,16 +42,6 @@ mv japanese-task1-train sigmorphon2016/data/
 
 There is no test and development set. For the training and evaluation, the file `japanese-task1-train` is split: 70\% of the analogies for the training and 30\% for the evaluation. The split is always the same for reproducibility.
 
-%### Setting-up Lepage's approach
-%First, check that you have `swig` installed (`sudo apt install swig` on Ubuntu-based systems).
-
-%Then, run the following from the home directory:
-%```bash
-%cd symbolic_baseline/lepage
-%conda activate morpho-analogy
-%pip install -e .
-%```
-
 ## Usage
 %To run the baselines, run `python run_baseline.py <language> <algorithm>` (ex: `python run_baseline.py arabic kolmo`).
 %This will output a summary in the command line as well as a CSV log file in the baseline folder (ex: `baseline/alea/arabic`).
