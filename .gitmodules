@@ -1,0 +1,6 @@
+[submodule "sigmorphon2016"]
+	path = sigmorphon2016
+	url = https://github.com/ryancotterell/sigmorphon2016
+[submodule "embeddings/bert-base-multilingual-cased"]
+	path = embeddings/bert-base-multilingual-cased
+	url = https://huggingface.co/bert-base-multilingual-cased
