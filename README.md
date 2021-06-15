@@ -11,7 +11,7 @@ Clone the repository on your local machine, using the following command:
 ```bash
 git clone --recurse-submodules https://github.com/AmandineDecker/nn-morpho-analogy.git
 ```
-This will download the repository and its *submodules* (external git repositories, in this case the SIGMORPHON16 and BERT's multilingual model).
+This will download the repository and its *submodules* (external git repositories, in this case the SIGMORPHON16 dataset).
 
 **[Optional]** To get the GloVe embedding model for German and set it up so that the Dataset class from `data.py`, run:
 ```bash
