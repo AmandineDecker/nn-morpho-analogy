@@ -9,7 +9,7 @@ The following instalation insruction are designed for comand line on Unix system
 Clone the repository on your local machine, using the following comand:
 
 ```bash
-git clone --recurse-submodules https://gitlab.inria.fr/emarquer/morphological-analogies-using-neural-networks
+git clone --recurse-submodules https://github.com/AmandineDecker/nn-morpho-analogy.git
 ```
 This will download the repository and its *submodules* (external git repositories, in this case the SIGMORPHON16 and BERT's multilingual model).
 
