@@ -43,9 +43,7 @@ mv japanese-task1-train sigmorphon2016/data/
 There is no test and development set. For the training and evaluation, the file `japanese-task1-train` is split: 70\% of the analogies for the training and 30\% for the evaluation. The split is always the same for reproducibility.
 
 ## Usage
-%To run the baselines, run `python run_baseline.py <language> <algorithm>` (ex: `python run_baseline.py arabic kolmo`).
-%This will output a summary in the command line as well as a CSV log file in the baseline folder (ex: `baseline/alea/arabic`).
-For each of the files, it is not necessary to fill the parameters when you run the code, the terminal will ask you to fill them if you did not do it. The parameters in parentheses are automatically filled if you do not fill them when you launch the code but you will not be asked to fill them by the terminal.
+For each of the files, it is not necessary to fill the parameters when you run the code, the terminal will ask you to fill them if you did not do it. However, for the parameters in parentheses, if you do not fill them when you launch the code you will not be asked to fill them by the terminal (they are automatically filled).
 
 
 To train a classifier for a language and the corresponding embedding model, run `python train_cnn_classifier.py --language=<language> --nb_analogies=<number of analogies to use> --epochs=<number of epochs>` (ex: `python train_cnn_classifier.py --language=german --nb_analogies=50000 --epochs=20`).
