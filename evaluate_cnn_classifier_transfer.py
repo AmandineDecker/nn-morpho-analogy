@@ -19,7 +19,7 @@ from utils import elapsed_timer, collate, get_accuracy_classification
               help='The maximum number of analogies (before augmentation) we evaluate the models on. If the number is greater than the number of analogies in the dataset, then all the analogies will be used.', show_default=True)
 @click.option('--epochs', default=20,
               help='The number of epochs the models were trained on (we use this parameter to use the right files).', show_default=True)
-@click.option('--mode', type=click.Choice(['full', 'partial'], case_sensitive=False), default='full', prompt='The number of analogies', help='The language of the classifier.', show_default=True)
+@click.option('--mode', type=click.Choice(['full', 'partial'], case_sensitive=False), default='full', prompt='The transfer mode', help='The language of the classifier.', show_default=True)
 def evaluate_classifier_transfer(nb_analogies, epochs, mode):
     '''Produces the accuracy for valid analogies, invalid analogies and analogies before data augmentation with all the models tranfered to all the languages.
 
