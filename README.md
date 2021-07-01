@@ -31,6 +31,7 @@ conda activate morpho-analogy
 conda install -y pytorch torchvision torchaudio cudatoolkit=10.2 -c pytorch -c=conda-forge
 conda install -y -c huggingface transformers
 conda install -y numpy scipy pandas matplotlib seaborn
+conda install -y scikit-learn click
 ```
 
 ### Setting-Up the Japanese Data
