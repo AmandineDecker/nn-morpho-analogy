@@ -28,15 +28,6 @@ def train_classifier(language, nb_analogies, epochs):
     epochs -- The number of epochs we train the model for.'''
     device = "cuda" if torch.cuda.is_available() else "cpu"
 
-    def get_accuracy(y_true, y_prob):
-        assert y_true.size() == y_prob.size()
-        y_prob = y_prob > 0.5
-        if y_prob.ndim > 1:
-            return (y_true == y_prob).sum().item() / y_true.size(0)
-        else:
-            return (y_true == y_prob).sum().item()
-
-
     # --- Prepare data ---
 
     ## Train and test dataset

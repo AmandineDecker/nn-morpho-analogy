@@ -80,10 +80,10 @@ def evaluate_classifier(language, epochs, nb_analogies):
     for a, b, c, d in test_dataloader:
 
         # compute the embeddings
-        a = embedding_model(a)
-        b = embedding_model(b)
-        c = embedding_model(c)
-        d = embedding_model(d)
+        a = embedding_model(a.to(device))
+        b = embedding_model(b.to(device))
+        c = embedding_model(c.to(device))
+        d = embedding_model(d.to(device))
 
         data = torch.stack([a, b, c, d], dim = 1)
 
