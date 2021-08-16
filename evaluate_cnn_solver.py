@@ -133,9 +133,9 @@ def evaluate_solver(language, epochs, nb_analogies):
 
                 d_expected_closest_cosine = closest_cosine(d_expected)
                 d_expected_closest_euclid = closest_euclid(d_expected)
-
-                accuracy_cosine.append(1 if d_expected_closest_cosine == d_closest_cosine else 0)
-                accuracy_euclid.append(1 if d_expected_closest_euclid == d_closest_euclid else 0)
+                
+                accuracy_cosine.append(torch.allclose(d_expected, custom_embeddings.get_vecs_by_tokens(d_closest_cosine).to(device), atol=1e-05))
+                accuracy_euclid.append(torch.allclose(d_expected, custom_embeddings.get_vecs_by_tokens(d_closest_euclid).to(device), atol=1e-05))
 
     print(f'Accuracy with Cosine similarity: {mean(accuracy_cosine)}\nAccuracy with Euclidean distance: {mean(accuracy_euclid)}\n\n')
 
