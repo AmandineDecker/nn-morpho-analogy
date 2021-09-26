@@ -6,7 +6,7 @@
 The following installation instruction are designed for command line on Unix systems. Refer to the instructions for Git and Anaconda on your exploitation system for the corresponding instructions.
 
 ### Cloning the Repository
-Clone the repository on your local machine, using the following command:
+Clone the repository to your local machine, using the following command:
 
 ```bash
 git clone --recurse-submodules https://github.com/AmandineDecker/nn-morpho-analogy.git
